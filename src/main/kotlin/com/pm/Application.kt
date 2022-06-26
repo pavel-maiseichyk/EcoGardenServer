@@ -8,10 +8,10 @@ fun main(args: Array<String>): Unit =
 
 @Suppress("unused")
 fun Application.module() {
-//    configureKoin()
-//    configureAuth()
+    configureKoin()
+    configureAuthentication()
     configureRouting()
-//    configureSerialization()
+    configureSerialization()
     configureMonitoring()
-  // configureSession()
+    configureSession()
 }

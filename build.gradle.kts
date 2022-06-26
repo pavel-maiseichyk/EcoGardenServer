@@ -20,6 +20,10 @@ repositories {
     mavenCentral()
 }
 
+tasks {
+    create("stage").dependsOn("installDist")
+}
+
 dependencies {
     implementation(kotlin("stdlib"))
     implementation("io.ktor:ktor-server-core-jvm:$ktorVersion")
